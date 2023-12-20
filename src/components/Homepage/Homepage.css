@@ -1,0 +1,93 @@
+#header {
+    position: fixed;
+    width: 100%;
+    transform: translateX(-5%);
+    margin-bottom: 2rem;
+    margin: 0;
+    padding: 4rem 5%;
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+#header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+#connect-with-me {
+    border-bottom: 1px solid #000;
+}
+
+#hero {
+    position: relative;
+    height: 100vh;
+    padding: 8rem 0 4rem 0;
+}
+
+#hero h1 {
+    position: relative;
+    font-size: 5rem;
+    font-weight: 500;
+    overflow-wrap: normal;
+}
+
+#polished-text {
+    position: absolute;
+    top: 15rem;
+    right: 0;
+}
+
+#digital-text {
+    position: absolute;
+    top: 30rem;
+    left: 0;
+}
+
+#digital-text span {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--beige-color);
+}
+
+#enigma-definition {
+    width: 40%;
+    position: relative;
+    top: 8.5rem;
+}
+
+#explore-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    background-color: #000;
+    cursor: pointer;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+#hero-emoticon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 8rem;
+    margin-bottom: 4rem;
+}
+
+#hero img {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%) rotate(90deg);
+    height: 3rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
