@@ -5,6 +5,7 @@
     margin-bottom: 2rem;
     margin: 0;
     padding: 4rem 5%;
+    z-index: 1000;
 }
 
 #header nav {
@@ -31,20 +32,20 @@
 
 #hero h1 {
     position: relative;
-    font-size: 5rem;
+    font-size: 10rem;
     font-weight: 500;
     overflow-wrap: normal;
 }
 
 #polished-text {
     position: absolute;
-    top: 15rem;
+    top: 20rem;
     right: 0;
 }
 
 #digital-text {
     position: absolute;
-    top: 30rem;
+    top: 40rem;
     left: 0;
 }
 
@@ -57,12 +58,13 @@
 #enigma-definition {
     width: 40%;
     position: relative;
-    top: 8.5rem;
+    top: 8rem;
+    font-size: 1.5rem;
 }
 
 #explore-btn {
     position: absolute;
-    bottom: 0;
+    bottom: 9rem;
     left: 0;
     padding: 1rem 2rem;
     font-size: 1.5rem;
@@ -70,24 +72,59 @@
     border: 1px solid transparent;
     background-color: #000;
     cursor: pointer;
-    margin-bottom: 4rem;
     color: white;
 }
 
 #hero-emoticon {
     position: absolute;
-    bottom: 0;
+    bottom: 8rem;
     right: 0;
     font-size: 8rem;
-    margin-bottom: 4rem;
 }
 
 #hero img {
     position: absolute;
-    bottom: 0;
+    bottom: 4rem;
     right: 50%;
     transform: translateX(50%) rotate(90deg);
     height: 3rem;
-    margin-bottom: 2rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 2320px) {
+    #hero h1 {
+        font-size: 8rem;
+    }
+
+    #hero-emoticon {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    #hero h1 {
+        font-size: 6rem;
+    }
+
+    #polished-text {
+        position: absolute;
+        top: 15rem;
+        right: 0;
+    }
+    
+    #digital-text {
+        position: absolute;
+        top: 30rem;
+        left: 0;
+    }
+
+    #enigma-definition {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #hero h1 {
+        font-size: 4rem;
+    }
 }

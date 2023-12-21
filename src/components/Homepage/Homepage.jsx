@@ -7,7 +7,7 @@ const Homepage = () => {
         <>
             <header id="header">
                 <nav>
-                    <span>VINCE ERMITANO</span>
+                    <a href="#">VINCE ERMITANO</a>
                     <ul>
                         <li>
                             <a href="#">Home</a>
@@ -24,14 +24,14 @@ const Homepage = () => {
             </header>
             <section id="hero">
                 <h1>
-                    {"<CONCEPTS />"} INTO{" "}
+                    {"<CONCEPTS />"} INTO ↴{" "}
                     <span id="polished-text">POLISHED ■</span>{" "}
                     <span id="digital-text">➥ <span>DIGITAL EXPERIENCES</span></span>
                 </h1>
                 <div id="enigma-definition">
                     {"<>"}
                     <p>
-                        <b>Enigma</b> <span>(eh-nig-muh)</span> ▲
+                        <b>Enigma</b> <span>(eh-nig-muh)</span> ¯\*( ͡❛ ͜ʖ ͡❛)*/¯
                     </p>
                     <p>
                         <i>Definition:</i> Crafting elusive digital landscapes, where
@@ -42,7 +42,7 @@ const Homepage = () => {
                     {"<>"}
                 </div>
                 <a id="explore-btn"href="#">Explore My Work ▼</a>
-                <span id="hero-emoticon">( ͡❛ ● ͡❛)</span>
+                <span id="hero-emoticon">( ≖.≖)</span>
                 <img src={DoubleArrow} alt="double-arrow" />
             </section>
         </>
