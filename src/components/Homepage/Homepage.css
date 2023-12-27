@@ -12,12 +12,15 @@
     display: flex;
     justify-content: space-between;
     font-weight: 600;
+    background-color: var(--light-gray-color);
 }
 
 #header nav ul {
     display: flex;
     list-style: none;
     gap: 1rem;
+    margin: 0;
+    padding-inline-start: 0;
 }
 
 #connect-with-me {

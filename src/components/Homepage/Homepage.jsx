@@ -1,6 +1,7 @@
 import React from "react";
 import "./Homepage.css";
 import DoubleArrow from '../../assets/double-arrow-right-icon.svg';
+import Projects from "./Projects";
 
 const Homepage = () => {
     return (
@@ -45,6 +46,7 @@ const Homepage = () => {
                 <span id="hero-emoticon">( ≖.≖)</span>
                 <img src={DoubleArrow} alt="double-arrow" />
             </section>
+            <Projects />
         </>
     );
 };

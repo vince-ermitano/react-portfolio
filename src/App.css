@@ -1,6 +1,8 @@
 :root {
   font-family: 'Montserrat', sans-serif;
+  --light-gray-color: #F7F6F8;
   --beige-color: #D2B48C;
+  background-color: var(--light-gray-color);
 }
 
 body {
