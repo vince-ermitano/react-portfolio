@@ -1,0 +1,23 @@
+.contact {
+    width: 100vw;
+    transform: translateX(-5%);
+    padding: 4rem 5%;
+}
+
+.contact:hover {
+    background-color: #D9D9D9;
+}
+
+.contact:hover h2 {
+    color: blue;
+}
+
+.contact h3 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact h2 {
+    font-size: 8rem;
+}
