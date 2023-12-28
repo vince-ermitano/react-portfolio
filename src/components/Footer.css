@@ -1,0 +1,32 @@
+footer {
+    background-color: #111;
+    color: #fff;
+    width: 100vw;
+    transform: translateX(-5%);
+    padding: 4rem;
+    font-weight: 600;
+}
+
+footer .links {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+footer .links ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+footer .links ul a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    color: #666;
+}
+
+footer .links p {
+    margin-bottom: 1rem;
+}
