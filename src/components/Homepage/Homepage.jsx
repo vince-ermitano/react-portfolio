@@ -1,6 +1,7 @@
 import React from "react";
 import "./Homepage.css";
 import DoubleArrow from '../../assets/double-arrow-right-icon.svg';
+import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
@@ -47,6 +48,7 @@ const Homepage = () => {
                 <span id="hero-emoticon">( ≖.≖)</span>
                 <img src={DoubleArrow} alt="double-arrow" />
             </section>
+            <About />
             <Projects />
             <Contact />
         </>

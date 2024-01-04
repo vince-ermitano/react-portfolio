@@ -14,3 +14,7 @@ a {
   color: #000;
   cursor: pointer;
 }
+
+section {
+  margin-bottom: 4rem;
+}

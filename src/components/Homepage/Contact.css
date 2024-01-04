@@ -2,6 +2,7 @@
     width: 100vw;
     transform: translateX(-5%);
     padding: 4rem 5%;
+    margin-bottom: 0;
 }
 
 .contact:hover {
