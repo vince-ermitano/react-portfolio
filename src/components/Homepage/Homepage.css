@@ -41,6 +41,8 @@
 }
 
 #polished-text {
+    font-family: 'Bungee Shade', sans-serif;
+    font-size: 8rem;
     position: absolute;
     top: 20rem;
     right: 0;
