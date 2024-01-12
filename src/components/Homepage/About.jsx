@@ -7,7 +7,9 @@ const About = () => {
     const handleLinkClick = (e) => {
         const links = document.querySelectorAll("#about-me nav ul li");
         const image = document.querySelector("#about-me .related-image img");
-        const relatedText = document.querySelector("#about-me .related-text .details");
+        const relatedText = document.querySelector(
+            "#about-me .related-text .details"
+        );
 
         links.forEach((link) => {
             link.classList.remove("active");
@@ -41,36 +43,37 @@ const About = () => {
                 <div className="related-text">
                     <nav>
                         <ul>
-                            <li onClick={handleLinkClick} className="active">lifestyle</li>
-                            <li onClick={handleLinkClick}>education</li>
-                            <li onClick={handleLinkClick}>
+                            <li onClick={handleLinkClick} className="active">
                                 professional focus
                             </li>
                             <li onClick={handleLinkClick}>tech-stack</li>
+                            <li onClick={handleLinkClick}>education</li>
+                            <li onClick={handleLinkClick}>
+                                lifestyle
+                            </li>
                         </ul>
                     </nav>
                     <div className="details fade-in">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
+                            Hey there! I'm Vince, a full-stack web developer
+                            based in the US. I find enjoyment in creating things
+                            that live on the internet, whether that be websites,
+                            applications, or anything in between. In my role as
+                            a full-stack developer, I engage deeply with both
+                            the front-end aesthetics and user-experience
+                            aspects, as well as the intricate functionality and
+                            performance optimization of the back-end. My focus
+                            involves consistently exploring innovative
+                            approaches to enhance the visual appeal of projects
+                            while simultaneously striving for efficiency,
+                            optimal performance, and security in all facets of development. I
+                            find being able to work on both sides of the coin to
+                            be very rewarding, and such position provides me with a
+                            comprehensive understanding of the nature of the web.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
+                            Take a look at my projects below to get a better
+                            sense of my work!
                         </p>
                         <a className="link" href="/">
                             follow me on instagram
@@ -78,7 +81,11 @@ const About = () => {
                     </div>
                 </div>
                 <div className="related-image">
-                    <img src={images["lifestyle"]} className="fade-in" alt="about-me" />
+                    <img
+                        src={images["lifestyle"]}
+                        className="fade-in"
+                        alt="about-me"
+                    />
                 </div>
             </div>
         </section>
