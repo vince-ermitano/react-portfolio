@@ -36,6 +36,35 @@ const About = () => {
         "tech-stack": "https://i.postimg.cc/PrbZ2XqR/2.jpg",
     };
 
+    const sectionMap = {
+        lifestyle: {
+            image: "https://i.postimg.cc/TYvgVLTb/3.jpg",
+        },
+        education: {
+            image: "https://i.postimg.cc/PrbZ2XqR/2.jpg",
+            text: [
+                "I graduated with a Bachelor of Science in Computer Science from the University of California, San Diego. My coursework included a variety of topics such as data structures, algorithms, software engineering, and computer architecture.",
+                <ul>
+                    <li>University of California, San Diego</li>
+                    <li>B.S. Computer Science</li>
+                    <li>GPA: 3.85</li>
+                    <li>Cum Laude</li>
+                    <li>Provost Honors</li>
+                </ul>
+            ]
+        },
+        "professional focus": {
+            image: "https://i.postimg.cc/TYvgVLTb/3.jpg",
+            text: [
+                "Hey there! I'm Vince, a full-stack web developer based in the US. I find enjoyment in creating things that live on the internet, whether that be websites, applications, or anything in between. In my role as a full-stack developer, I engage deeply with both the front-end aesthetics and user-experience aspects, as well as the intricate functionality and performance optimization of the back-end. My focus involves consistently exploring innovative approaches to enhance the visual appeal of projects while simultaneously striving for efficiency, optimal performance, and security in all facets of development. I find being able to work on both sides of the coin to be very rewarding, and such position provides me with a comprehensive understanding of the nature of the web.",
+                "Take a look at my projects below to get a better sense of my work!",
+            ],
+        },
+        "tech-stack": {
+            image: "https://i.postimg.cc/PrbZ2XqR/2.jpg",
+        },
+    };
+
     return (
         <section id="about-me" data-aos="fade-up">
             <h2>MEET ME ⌘</h2>
@@ -48,9 +77,7 @@ const About = () => {
                             </li>
                             <li onClick={handleLinkClick}>tech-stack</li>
                             <li onClick={handleLinkClick}>education</li>
-                            <li onClick={handleLinkClick}>
-                                lifestyle
-                            </li>
+                            <li onClick={handleLinkClick}>lifestyle</li>
                         </ul>
                     </nav>
                     <div className="details fade-in">
@@ -66,10 +93,11 @@ const About = () => {
                             involves consistently exploring innovative
                             approaches to enhance the visual appeal of projects
                             while simultaneously striving for efficiency,
-                            optimal performance, and security in all facets of development. I
-                            find being able to work on both sides of the coin to
-                            be very rewarding, and such position provides me with a
-                            comprehensive understanding of the nature of the web.
+                            optimal performance, and security in all facets of
+                            development. I find being able to work on both sides
+                            of the coin to be very rewarding, and such position
+                            provides me with a comprehensive understanding of
+                            the nature of the web.
                         </p>
                         <p>
                             Take a look at my projects below to get a better
