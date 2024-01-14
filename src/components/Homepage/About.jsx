@@ -25,7 +25,7 @@ const About = () => {
         setTimeout(() => {
             image.classList.add("fade-in");
             relatedText.classList.add("fade-in");
-            image.src = images[clickedLink];
+            image.src = sectionMap[clickedLink].image;
         }, 750);
     };
 
@@ -37,6 +37,13 @@ const About = () => {
     };
 
     const sectionMap = {
+        /*
+        lifestyle content:
+        - music
+        - photography
+        - golf
+        - video games
+        */
         lifestyle: {
             image: "https://i.postimg.cc/TYvgVLTb/3.jpg",
         },
@@ -62,6 +69,26 @@ const About = () => {
         },
         "tech-stack": {
             image: "https://i.postimg.cc/PrbZ2XqR/2.jpg",
+            text: [
+                "These are technologies I mainly use for full-stack development",
+                <ul>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>Node.js</li>
+                    <li>Express JS</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                    <li>Firebase</li>
+                    <li>Git/Github</li>
+                </ul>,
+                "Other technologies I have experience with either through coursework or personal projects",
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Chai</li>
+                </ul>
+            ]
         },
     };
 
@@ -110,7 +137,7 @@ const About = () => {
                 </div>
                 <div className="related-image">
                     <img
-                        src={images["lifestyle"]}
+                        src={sectionMap["lifestyle"].image}
                         className="fade-in"
                         alt="about-me"
                     />
