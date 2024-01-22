@@ -41,15 +41,19 @@
 }
 
 #about-me p {
-    margin-bottom: 4rem;
+    margin: 1rem 0;
     font-weight: 600;
     line-height: 1.5;
 }
 
-#about-me .link {
+#about-me .related-text .details a.link {
     font-weight: 600;
     color: #333;
     text-decoration: underline;
+}
+
+#about-me .related-text .margin-bottom {
+    margin-bottom: 4rem;
 }
 
 #about-me .related-image{
@@ -73,6 +77,18 @@
     left: -400px;
     transition: all 0.75s ease-out;
     opacity: 0;
+}
+
+#about-me .related-text .details a, #about-me .related-text .details span {
+    font-weight: 600;
+    font-style: italic;
+    color: #666;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#about-me .related-text .details a:hover {
+    color: black;
 }
 
 #about-me .related-text .details.fade-in {
