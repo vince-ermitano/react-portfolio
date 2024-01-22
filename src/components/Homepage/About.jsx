@@ -46,6 +46,43 @@ const About = () => {
         */
         lifestyle: {
             image: "https://i.postimg.cc/TYvgVLTb/3.jpg",
+            text: [
+                <>
+                    There are a variety of things I enjoy doing in my free time
+                    outside of programming. I love listening to{" "}
+                    <a href="/">music</a>(I said 'outside of programming', but
+                    this is an exception). I primarily listen to hip-hop/rap,
+                    r&b, pop, and electronic (lo-fi when I'm in the coding
+                    zone). My current artists currently are Travis Scott, New
+                    Jeans, and Future. Take a look at my Spotify profile to get
+                    an in-depth sense of the music I like.
+                    <br />I also engage a little bit in{" "}
+                    <a href="/">photography</a> due to getting inspired from
+                    friends who actively pursue a career in the field, the
+                    prominence of social media, as well as the aesthetic of the
+                    location I lived at the time of discovery. I'm usually
+                    inconsistent with my activeness on the hobby, but when I am
+                    taking photos, it's therapeutic and mentally stimulating at
+                    the same time which sort of causes me to go on these periods
+                    where my life only consists thinking about and taking
+                    photos. I, typically, find myself taking street photos and
+                    portraits. Photography is a great way for me to capture
+                    memories, relive those moments, and share it with everyone.
+                    You can check out some of my photos if you're interested on
+                    my <a href="/">Instagram</a>.
+                    <br />
+                    Growing up as a kid with a decently sized sports experience,
+                    I'm always doing something active. Currently, I've been
+                    keeping in shape by going to the gym (lifting weights)
+                    religiously. I'm not a gym-rat by any means, but it's
+                    personally fulfilling to see myself progress in terms of
+                    strength and physique. Also, as of recently, I found myself
+                    playing golf, a completely new sport to me. I started around
+                    October of 2023, and I definitely have a tremendous amount
+                    of room to improve, but the goal is to break 90 by the end
+                    of the year!
+                </>,
+            ],
         },
         education: {
             image: "https://i.postimg.cc/PrbZ2XqR/2.jpg",
@@ -57,8 +94,8 @@ const About = () => {
                     <li>GPA: 3.85</li>
                     <li>Cum Laude</li>
                     <li>Provost Honors</li>
-                </ul>
-            ]
+                </ul>,
+            ],
         },
         "professional focus": {
             image: "https://i.postimg.cc/TYvgVLTb/3.jpg",
@@ -87,8 +124,8 @@ const About = () => {
                     <li>Java</li>
                     <li>C++</li>
                     <li>Chai</li>
-                </ul>
-            ]
+                </ul>,
+            ],
         },
     };
 
