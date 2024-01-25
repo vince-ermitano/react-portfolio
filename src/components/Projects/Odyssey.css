@@ -1,0 +1,88 @@
+#odyssey .hero {
+    position: relative;
+    color: white;
+}
+
+#odyssey .hero img.main {
+    width: 100vw;
+    transform: translateX(-5%);
+}
+
+#odyssey .hero img.logo {
+    width: 300px;
+}
+
+#odyssey .hero .logo-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#odyssey .hero .logo-container p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#odyssey .hero .links {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#odyssey .hero .links p {
+    font-size: 2.5rem;
+}
+
+#odyssey .hero .link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+#odyssey .hover_underline_animation p {
+    display: inline-block;
+    width: fit-content;
+    position: relative;
+}
+
+#odyssey .hover_underline_animation p::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#odyssey .hover_underline_animation:hover p::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#odyssey .hover_underline_animation:hover div {
+    background-color: #666;
+}
+
+
+#odyssey .hero .links .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#odyssey .hero .links .circle svg {
+    width: 80%;
+    height: 80%;
+}
