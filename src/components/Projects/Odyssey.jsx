@@ -20,13 +20,13 @@ const Odyssey = () => {
                     <p>Creative Masterclass ✶ ࣪˖࿐ *</p>
                 </div>
                 <div className="links">
-                    <div className="link hover_underline_animation">
+                    <div className="link hover_underline_animation" onClick={() => window.open('https://education.gakuyen.com/', '_blank')}>
                         <p>VISIT THE ODYSSEY</p>
                         <div className="circle">
                             <GoArrowUpRight />
                         </div>
                     </div>
-                    <div className="link hover_underline_animation">
+                    <div className="link hover_underline_animation" onClick={() => window.open('https://github.com/vince-ermitano/gakuyen-education', '_blank')}>
                         <p>GITHUB REPO</p>
                         <div className="circle">
                             <GoArrowUpRight />
