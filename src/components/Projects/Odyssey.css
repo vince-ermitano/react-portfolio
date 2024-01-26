@@ -62,6 +62,10 @@
     transition: transform 0.25s ease-out;
 }
 
+#odyssey .hover_underline_animation:hover {
+    cursor: pointer;
+}
+
 #odyssey .hover_underline_animation:hover p::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -85,4 +89,29 @@
 #odyssey .hero .links .circle svg {
     width: 80%;
     height: 80%;
+}
+
+/* overview-goal */
+#odyssey .overview-goal {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 4rem;
+    border-left: 0.5rem solid #333;
+}
+
+#odyssey .overview-goal h1{
+    font-size: 6rem;
+}
+
+#odyssey .overview-goal p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#odyssey .overview-goal + img {
+    width: 80%;
+    margin: 4rem auto;
 }
