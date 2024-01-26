@@ -47,9 +47,12 @@ const Odyssey = () => {
                     deserunt mollit anim id est laborum.
                 </p>
             </section>
-            <img src="/images/odyssey_hero_screenshot.png" alt="Odyssey Hero Screenshot" />
+            <img
+                src="/images/odyssey_hero_screenshot.png"
+                alt="Odyssey Hero Screenshot"
+            />
             <section className="overview-goal">
-                <h1>GOAL</h1>
+                <h2>GOAL</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -60,6 +63,20 @@ const Odyssey = () => {
                     occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
                 </p>
+            </section>
+            <section className="tasks">
+                <div className="two-title">
+                    <h2>FULFILLED TASKS</h2>
+                    <h3>WHAT I DID</h3>
+                    <div className="tasks-container">
+                        <div className="task">
+                        </div>
+                        <div className="task">
+                        </div>
+                        <div className="task">
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
     );
