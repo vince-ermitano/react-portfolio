@@ -198,7 +198,7 @@ const Odyssey = () => {
                             cupidatat non proident, sunt in culpa qui officia
                             deserunt mollit anim id est laborum.
                         </p>
-                        <button className="black-button">Explore Gaku's Work</button>
+                        <a className="black-button" href="https://www.gakuyen.com/" target="_blank">Explore Gaku's Work</a>
                     </div>
                 </div>
             </section>
