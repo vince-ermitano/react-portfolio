@@ -170,3 +170,51 @@
     padding-inline-start: 0;
     color: #333;
 }
+
+/* collaborator section */
+#odyssey .collaborator {
+    position: relative;
+    padding-top: 8rem;
+}
+
+#odyssey .collaborator-container {
+    display: flex;
+    position: relative;
+    gap: 4rem;
+    width: 80%;
+    padding: 0 8rem;
+}
+
+#odyssey .collaborator-container p:first-child {
+    font-size: 6rem;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transform-origin: top left;
+    /* display: inline-block;
+    width: fit-content; */
+}
+
+#odyssey .collaborator h2 {
+    font-size: 10rem;
+    position: absolute;
+    top: 0;
+}
+
+#odyssey .collaborator h3 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#odyssey .collaborator .description {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#odyssey .collaborator button {
+    width: fit-content;
+    margin-top: 4rem;
+}

@@ -177,6 +177,31 @@ const Odyssey = () => {
                     </ul>
                 </div>
             </section>
+            <section className="collaborator">
+                <h2>COLLABORATOR</h2>
+                <div className="collaborator-container">
+                    <p>@GAKUYEN</p>
+                    <img
+                        src="/images/gakuyen_prof_pic.png"
+                        alt="Gakuyen Profile"
+                    />
+                    <div className="description">
+                        <h3>GAKU LANGE</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.
+                        </p>
+                        <button className="black-button">Explore Gaku's Work</button>
+                    </div>
+                </div>
+            </section>
         </section>
     );
 };

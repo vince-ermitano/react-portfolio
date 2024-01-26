@@ -18,3 +18,10 @@ a {
 section {
   margin-bottom: 4rem;
 }
+
+.black-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+}
