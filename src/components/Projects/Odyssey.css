@@ -3,6 +3,12 @@
     color: white;
 }
 
+#odyssey p, #odyssey li {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
 #odyssey .hero img.main {
     width: 100vw;
     transform: translateX(-5%);
@@ -113,12 +119,6 @@
     border-left: 0.5rem solid #333;
 }
 
-#odyssey .overview-goal p {
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.5;
-}
-
 #odyssey .overview-goal + img {
     width: 80%;
     margin: 4rem auto;
@@ -130,14 +130,16 @@
     width: 100vw;
     transform: translateX(-5%);
     padding: 4rem 5%;
-    background-image: url(/public/images/coursebannerimg.png);
+    background-image: url(/images/coursebannerimg.png);
 }
 
 #odyssey .tasks-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(6, minmax(500px, 1fr));
     gap: 4rem;
     margin: 2rem 0;
+    /* transition: grid-template-columns 0.5s ease-out; */
 }
 
 #odyssey .task {
@@ -146,4 +148,25 @@
     background-color: aliceblue;
     opacity: 0.8;
     border-radius: 8px;
+}
+
+/* takeaways and tech-stack section */
+#odyssey .takeaways, #odyssey .tech-stack {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+}
+
+#odyssey .takeaways h2, #odyssey .tech-stack h2 {
+    color: #666;
+}
+
+#odyssey .takeaways h3, #odyssey .tech-stack h3 {
+    margin-bottom: 4rem;
+}
+
+#odyssey .tech-stack ul {
+    list-style: none;
+    padding-inline-start: 0;
+    color: #333;
 }

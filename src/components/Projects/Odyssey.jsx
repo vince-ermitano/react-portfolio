@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Odyssey.css";
 import { GoArrowUpRight } from "react-icons/go";
+import { wrapGrid } from "animate-css-grid";
 
 const Odyssey = () => {
+    useEffect(() => {
+        const grid = document.querySelector(".tasks-container");
+        wrapGrid(grid);
+    }, []);
+
+    const myEffect = () => {
+        const grid = document.querySelector(".tasks-container");
+        grid.classList.add("animate");
+    };
+
     return (
         <section id="odyssey">
             <section className="hero">
@@ -20,13 +31,29 @@ const Odyssey = () => {
                     <p>Creative Masterclass ✶ ࣪˖࿐ *</p>
                 </div>
                 <div className="links">
-                    <div className="link hover_underline_animation" onClick={() => window.open('https://education.gakuyen.com/', '_blank')}>
+                    <div
+                        className="link hover_underline_animation"
+                        onClick={() =>
+                            window.open(
+                                "https://education.gakuyen.com/",
+                                "_blank"
+                            )
+                        }
+                    >
                         <p>VISIT THE ODYSSEY</p>
                         <div className="circle">
                             <GoArrowUpRight />
                         </div>
                     </div>
-                    <div className="link hover_underline_animation" onClick={() => window.open('https://github.com/vince-ermitano/gakuyen-education', '_blank')}>
+                    <div
+                        className="link hover_underline_animation"
+                        onClick={() =>
+                            window.open(
+                                "https://github.com/vince-ermitano/gakuyen-education",
+                                "_blank"
+                            )
+                        }
+                    >
                         <p>GITHUB REPO</p>
                         <div className="circle">
                             <GoArrowUpRight />
@@ -68,14 +95,86 @@ const Odyssey = () => {
                 <div className="two-title">
                     <h2>FULFILLED TASKS</h2>
                     <h3>WHAT I DID</h3>
-                    <div className="tasks-container">
-                        <div className="task">
-                        </div>
-                        <div className="task">
-                        </div>
-                        <div className="task">
-                        </div>
+                </div>
+                <div className="tasks-container" onMouseEnter={myEffect}>
+                    <div className="task"></div>
+                    <div className="task"></div>
+                    <div className="task"></div>
+                </div>
+            </section>
+            <section className="takeaways">
+                <div className="left-panel">
+                    <div className="two-title">
+                        <h2>TAKEAWAYS</h2>
+                        <h3>WHAT I LEARNED</h3>
                     </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                    </p>
+                    <br />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                    </p>
+                    <br />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                    </p>
+                </div>
+                <div className="right-panel">
+                    <img
+                        src="/images/odyssey_takeaways_screenshot.png"
+                        alt="Odyssey Takeaways Screenshot"
+                    />
+                </div>
+            </section>
+            <section className="tech-stack">
+                <div className="left-panel">
+                    <img
+                        src="/images/odyssey_tech_stack_screenshot.png"
+                        alt="Odyssey Tech Stack Screenshot"
+                    />
+                </div>
+                <div className="right-panel">
+                    <div className="two-title">
+                        <h2>TECH-STACK</h2>
+                        <h3>WHAT I USED</h3>
+                    </div>
+                    <ul>
+                        <li>React</li>
+                        <li>React</li>
+                        <li>React</li>
+                        <li>React</li>
+                        <li>React</li>
+                        <li>React</li>
+                        <li>React</li>
+                        <li>React</li>
+                        <li>React</li>
+                        <li>React</li>
+                    </ul>
                 </div>
             </section>
         </section>
