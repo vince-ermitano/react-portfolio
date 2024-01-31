@@ -6,13 +6,30 @@ import { wrapGrid } from "animate-css-grid";
 const Odyssey = () => {
     useEffect(() => {
         const grid = document.querySelector(".tasks-container");
+        const taskItems = document.querySelectorAll(".task-item");
         wrapGrid(grid);
+
+        taskItems.forEach((taskItem) => {
+            wrapGrid(taskItem);
+        });
     }, []);
 
-    const myEffect = () => {
-        const grid = document.querySelector(".tasks-container");
-        grid.classList.add("animate");
-    };
+    // const gridAnimation = (e) => {
+    //     const task = e.target;
+    //     const grid = document.querySelector(".tasks-container");
+
+    //     if (task.classList.contains("task1")) {
+    //         grid.classList.toggle('task1-active');
+    //     }
+    //     if (task.classList.contains("task2")) {
+    //         grid.classList.toggle('task2-active');
+    //     }
+    // };
+
+    const taskItemAnimation = (e) => {
+        e.target.closest('.task-item').classList.toggle('active');
+        e.target.closest('.tasks-container').classList.toggle('active');
+    }
 
     return (
         <section id="odyssey">
@@ -96,10 +113,23 @@ const Odyssey = () => {
                     <h2>FULFILLED TASKS</h2>
                     <h3>WHAT I DID</h3>
                 </div>
-                <div className="tasks-container" onMouseEnter={myEffect}>
-                    <div className="task"></div>
-                    <div className="task"></div>
-                    <div className="task"></div>
+                <div className="tasks-container">
+                    <div className="task-item" onClick={(e) => taskItemAnimation(e)}>
+                        <div
+                            className="task task1"
+                        ></div>
+                        <div
+                            className="task details"
+                        ></div>
+                    </div>
+                    <div className="task-item" onClick={(e) => taskItemAnimation(e)}>
+                        <div
+                            className="task task1"
+                        ></div>
+                        <div
+                            className="task details"
+                        ></div>
+                    </div>
                 </div>
             </section>
             <section className="takeaways">
@@ -198,7 +228,13 @@ const Odyssey = () => {
                             cupidatat non proident, sunt in culpa qui officia
                             deserunt mollit anim id est laborum.
                         </p>
-                        <a className="black-button" href="https://www.gakuyen.com/" target="_blank">Explore Gaku's Work</a>
+                        <a
+                            className="black-button"
+                            href="https://www.gakuyen.com/"
+                            target="_blank"
+                        >
+                            Explore Gaku's Work
+                        </a>
                     </div>
                 </div>
             </section>

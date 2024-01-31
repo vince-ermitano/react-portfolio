@@ -47,7 +47,7 @@ const Contact = () => {
             </section>
             <div className="contact-content">
                 <p>
-                    Anything you would like to discuss with me about, I am here.{" "}
+                    Anything you would like to discuss with me about, send it over!{" "}
                     <br></br>I will reach out to you as soon as possible!
                 </p>
                 <form className="contact-form" onSubmit={handleSubmit}>
