@@ -5,6 +5,8 @@ import { wrapGrid } from "animate-css-grid";
 
 const Odyssey = () => {
     useEffect(() => {
+        scrollTo(0, 0);
+
         const grid = document.querySelector(".tasks-container");
         const taskItems = document.querySelectorAll(".task-item");
         wrapGrid(grid);
@@ -14,21 +16,12 @@ const Odyssey = () => {
         });
     }, []);
 
-    // const gridAnimation = (e) => {
-    //     const task = e.target;
-    //     const grid = document.querySelector(".tasks-container");
+    const taskItemOnMouseEnter = (e) => {
+        e.target.closest('.task-item').classList.add('active');
+    }
 
-    //     if (task.classList.contains("task1")) {
-    //         grid.classList.toggle('task1-active');
-    //     }
-    //     if (task.classList.contains("task2")) {
-    //         grid.classList.toggle('task2-active');
-    //     }
-    // };
-
-    const taskItemAnimation = (e) => {
-        e.target.closest('.task-item').classList.toggle('active');
-        e.target.closest('.tasks-container').classList.toggle('active');
+    const taskItemOnMouseLeave = (e) => {
+        e.target.closest('.task-item').classList.remove('active');
     }
 
     return (
@@ -49,7 +42,7 @@ const Odyssey = () => {
                 </div>
                 <div className="links">
                     <div
-                        className="link hover_underline_animation"
+                        className="link white_hover_underline_animation"
                         onClick={() =>
                             window.open(
                                 "https://education.gakuyen.com/",
@@ -63,7 +56,7 @@ const Odyssey = () => {
                         </div>
                     </div>
                     <div
-                        className="link hover_underline_animation"
+                        className="link white_hover_underline_animation"
                         onClick={() =>
                             window.open(
                                 "https://github.com/vince-ermitano/gakuyen-education",
@@ -114,21 +107,37 @@ const Odyssey = () => {
                     <h3>WHAT I DID</h3>
                 </div>
                 <div className="tasks-container">
-                    <div className="task-item" onClick={(e) => taskItemAnimation(e)}>
-                        <div
-                            className="task task1"
-                        ></div>
-                        <div
-                            className="task details"
-                        ></div>
+                    <div
+                        className="task-item"
+                        onMouseEnter={(e) => taskItemOnMouseEnter(e)}
+                        onMouseLeave={(e) => taskItemOnMouseLeave(e)}
+                    >
+                        <div className="task task1"></div>
+                        <div className="task details"></div>
                     </div>
-                    <div className="task-item" onClick={(e) => taskItemAnimation(e)}>
-                        <div
-                            className="task task1"
-                        ></div>
-                        <div
-                            className="task details"
-                        ></div>
+                    <div
+                        className="task-item"
+                        onMouseEnter={(e) => taskItemOnMouseEnter(e)}
+                        onMouseLeave={(e) => taskItemOnMouseLeave(e)}
+                    >
+                        <div className="task task1"></div>
+                        <div className="task details"></div>
+                    </div>
+                    <div
+                        className="task-item"
+                        onMouseEnter={(e) => taskItemOnMouseEnter(e)}
+                        onMouseLeave={(e) => taskItemOnMouseLeave(e)}
+                    >
+                        <div className="task task1"></div>
+                        <div className="task details"></div>
+                    </div>
+                    <div
+                        className="task-item"
+                        onMouseEnter={(e) => taskItemOnMouseEnter(e)}
+                        onMouseLeave={(e) => taskItemOnMouseLeave(e)}
+                    >
+                        <div className="task task1"></div>
+                        <div className="task details"></div>
                     </div>
                 </div>
             </section>

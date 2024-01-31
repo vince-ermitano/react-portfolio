@@ -30,3 +30,11 @@ footer p {
 footer .links p {
     margin-bottom: 1rem;
 }
+
+footer .links .contact-me p {
+    cursor: pointer;
+}
+
+footer .links .contact-me p:hover {
+    color: #fff;
+}

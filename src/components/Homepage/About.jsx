@@ -7,7 +7,7 @@ const About = () => {
     const scrollIntoView = (e) => {
         const clickedLink = e.target.dataset.query;
         const section = document.querySelector(`${clickedLink}`);
-        section.scrollIntoView({ behavior: "smooth" });
+        section.scrollIntoView({ behavior: "smooth", block: "center"});
     }
 
     const handleLinkClick = (e) => {
@@ -179,7 +179,7 @@ const About = () => {
     return (
         <section id="about-me" data-aos="fade-up">
             <h2>MEET ME ⌘</h2>
-            <div className="grid">
+            <div className="grid" data-aos="fade-up">
                 <div className="related-text">
                     <nav>
                         <ul>

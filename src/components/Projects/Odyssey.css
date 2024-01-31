@@ -49,13 +49,13 @@
     margin: 1rem 0;
 }
 
-#odyssey .hover_underline_animation p {
+#odyssey .white_hover_underline_animation p {
     display: inline-block;
     width: fit-content;
     position: relative;
 }
 
-#odyssey .hover_underline_animation p::after {
+#odyssey .white_hover_underline_animation p::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -68,16 +68,16 @@
     transition: transform 0.25s ease-out;
 }
 
-#odyssey .hover_underline_animation:hover {
+#odyssey .white_hover_underline_animation:hover {
     cursor: pointer;
 }
 
-#odyssey .hover_underline_animation:hover p::after {
+#odyssey .white_hover_underline_animation:hover p::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-#odyssey .hover_underline_animation:hover div {
+#odyssey .white_hover_underline_animation:hover div {
     background-color: #666;
 }
 
@@ -136,7 +136,8 @@
 #odyssey .tasks-container {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     /* grid-template-columns: repeat(6, minmax(500px, 1fr)); */
     margin: 2rem 0;
     /* transition: grid-template-columns 0.5s ease-out; */
@@ -151,12 +152,13 @@
     grid-template-columns: 1fr 1fr;
 }
 
+
+
 #odyssey .task {
     height: 500px;
     /* width: 100%; */
     background-color: aliceblue;
     opacity: 0.8;
-    border-radius: 8px;
 }
 
 #odyssey .task.details {

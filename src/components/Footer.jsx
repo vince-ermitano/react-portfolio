@@ -13,8 +13,10 @@ const Footer = () => {
                         <li><a href="https://www.instagram.com/prince_vince3" target="_blank">instagram</a></li>
                     </ul>
                 </div>
-                <div>
-                    <p>contact me</p>
+                <div className="contact-me">
+                    <p onClick={() => {
+                        document.querySelector(".contact").scrollIntoView({ behavior: "smooth", block: "center"});
+                    }}>contact me</p>
                 </div>
             </div>
             <p>© 2023 Vince Ermitano.</p>
