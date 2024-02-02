@@ -102,20 +102,38 @@ const Odyssey = () => {
             />
             <section className="overview-goal">
                 <h2>GOAL</h2>
-                <p>
-                    When Gaku and I were discussing the project prior to the
-                    execution, we agreed on three main characteristics and
-                    functionalities that the website needed to exhibit. One, and
-                    to no surprise, the website had to be visually appealing and
-                    engaging to show users the quality of the work that Gaku had
-                    put into his course. Two, since the masterclass was an
-                    exclusive to those who paid for it, the website had to be
-                    secure and only accessible to those who had the credentials
-                    to do so. Three, it had to be accessible for users across
-                    all types of devices and browsers. With these in mind, we
-                    had a clear goal of how we wanted the website to look and
-                    function.
-                </p>
+                <div className="description">
+                    <p>
+                        When Gaku and I were discussing the project prior to the
+                        execution, we agreed on three main characteristics and
+                        functionalities that the website needed to exhibit:
+                    </p>
+                    <ol>
+                        <li>
+                            To no surprise, the website had to be{" "}
+                            <b>visually appealing</b> and <b>engaging</b> to
+                            show users the quality of the work that Gaku had put
+                            into his course. It was also crucial for the website
+                            to maintain Gaku's persona/style that he displays
+                            through his brand for users to see consistency
+                            through his work.
+                        </li>
+                        <li>
+                            Since the masterclass is an exclusive experience to
+                            those who pay for it, the website had to be <b>secure</b> {" "}
+                            and provide <b>limited access</b> to those who had the credentials
+                            to do so.
+                        </li>
+                        <li>
+                            It had to be <b>accessible</b> for users across all types
+                            of devices and browsers.
+                        </li>
+                    </ol>
+                    <p>
+                        With these in mind, we had a clear goal of how we wanted
+                        the website to look and function.
+                    </p>
+                </div>
             </section>
             <section className="tasks">
                 <div className="two-title">

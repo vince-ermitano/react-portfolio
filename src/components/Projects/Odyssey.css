@@ -132,6 +132,12 @@
     background-color: #666;
 }
 
+#odyssey .overview-goal .description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 /* tasks section */
 #odyssey .tasks {
     color: white;
