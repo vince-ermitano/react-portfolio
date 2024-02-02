@@ -73,16 +73,28 @@ const Odyssey = () => {
             </section>
             <section className="overview-goal">
                 <h1>OVERVIEW</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                </p>
+                <div>
+                    <p>
+                        The Odyssey is a masterclass by Gaku Lange, an
+                        accomplished creative in the social media space, that
+                        educates aspiring fellow artists to push their work to
+                        become a successful business from finding their own
+                        creative voice to working with brands. I was tasked with
+                        building the website for the course from the wireframing
+                        and designing to the development and deloyment.
+                    </p>
+                    <br />
+                    <p>
+                        You can visit the site{" "}
+                        <a
+                            href="https://education.gakuyen.com/"
+                            target="_blank"
+                            className="hover_underline_animation"
+                        >
+                            here
+                        </a>
+                    </p>
+                </div>
             </section>
             <img
                 src="/images/odyssey_hero_screenshot.png"
@@ -91,14 +103,18 @@ const Odyssey = () => {
             <section className="overview-goal">
                 <h2>GOAL</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    When Gaku and I were discussing the project prior to the
+                    execution, we agreed on three main characteristics and
+                    functionalities that the website needed to exhibit. One, and
+                    to no surprise, the website had to be visually appealing and
+                    engaging to show users the quality of the work that Gaku had
+                    put into his course. Two, since the masterclass was an
+                    exclusive to those who paid for it, the website had to be
+                    secure and only accessible to those who had the credentials
+                    to do so. Three, it had to be accessible for users across
+                    all types of devices and browsers. With these in mind, we
+                    had a clear goal of how we wanted the website to look and
+                    function.
                 </p>
             </section>
             <section className="tasks">

@@ -124,6 +124,14 @@
     margin: 4rem auto;
 }
 
+#odyssey .overview-goal a {
+    color: #666;
+}
+
+#odyssey .overview-goal a.hover_underline_animation::after {
+    background-color: #666;
+}
+
 /* tasks section */
 #odyssey .tasks {
     color: white;
