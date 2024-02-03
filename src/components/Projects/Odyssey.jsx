@@ -80,8 +80,9 @@ const Odyssey = () => {
                         educates aspiring fellow artists to push their work to
                         become a successful business from finding their own
                         creative voice to working with brands. I was tasked with
-                        building the website for the course from the wireframing
-                        and designing to the development and deloyment.
+                        building the website for the course from the UI/UX
+                        design to the front-end + back-end development and
+                        deloyment.
                     </p>
                     <br />
                     <p>
@@ -163,13 +164,13 @@ const Odyssey = () => {
                                 <br />
                                 <p>
                                     All the wireframes were built using Figma,
-                                    where I would craft responsive designs and layouts for
-                                    each page of the website. They were then
-                                    shared and discussed with Gaku to make sure
-                                    we were on the same page and that they fit
-                                    the style he intended for. We went for a
-                                    dynamic and interactive look to keep users
-                                    engaged.
+                                    where I would craft responsive designs and
+                                    layouts for each page of the website. They
+                                    were then shared and discussed with Gaku to
+                                    make sure we were on the same page and that
+                                    they fit the style he intended for. We went
+                                    for a dynamic and interactive look to keep
+                                    users engaged.
                                 </p>
                                 <br />
                                 <p>
@@ -359,39 +360,87 @@ const Odyssey = () => {
                         <h3>WHAT I LEARNED</h3>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        This project was my biggest and my proudest personal
+                        full-stack development yet. It required extensive
+                        research, detailed planning, frequent meetings with
+                        Gaku, continuous revisions, and, of course, the
+                        notorious days and nights purely debugging. At the end
+                        of the 3-4 months of development and at the time of the
+                        website's release on December 9, 2023, I reflected on
+                        the tasks that I had completed, what I did well, what I
+                        could have done better, and what I learned in general.
                     </p>
                     <br />
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        I'd say that there are three main things that I believe
+                        I did well. One, was staying determined to complete this
+                        project regardless of how difficult, complex, and
+                        uncertain it got. There were a lot of functionalities
+                        that I implemented in this project that I had zero
+                        experience with prior to tackling this task, and I'm
+                        glad I got through them (of course, with the help of
+                        fellow developers), because I came out with more
+                        knowledge by the end than I did when I started. Two, I'm
+                        fulfilled and proud with the efficient communication and
+                        collaboration that I had with Gaku. Because we were both
+                        meeting up frequently and messaging each other, we were
+                        able to stay on top of things when it came to the things
+                        that we needed from each other. That collaborative
+                        environment set me up for success for having a clear
+                        goal, meeting deadlines, staying motivated, and overall
+                        just having a good time. Lastly, I'd say that I did a
+                        decent job at balancing and scheduling my tasks. I,
+                        obviously, had a lot of things to do, but I was able to
+                        manage my time well and not overwork myself.
                     </p>
                     <br />
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        On the other hand, there were definitely things that I
+                        could have done better. Firstly, I wish that I had
+                        refactored code to be more readable so I could be more
+                        efficient in debugging and adding new features. Me not
+                        realizing that the project was going to be that big (a
+                        lot of components and files) until it got, well ... big
+                        was not ideal. The amount of time that I could have
+                        saved and the amount of focus that I could have
+                        maintained would have made the developer experience so
+                        much better. Secondly, I noticed that I need to read the
+                        details more carefully when it comes to using things
+                        like APIs and other technologies. I could not believe
+                        the amount of times that I had to keep recorrecting my
+                        corrections when I was sending incorrectly formatted
+                        data to APIs, as well as incorrectly handling responses
+                        that they sent back to me. Further, there were
+                        misunderstandings about how payment installments worked
+                        (country restrictions), how refunds were handled, and
+                        how fees on transactions were taken via Stripe and
+                        PayPal which caused a little confusion for Gaku.
+                        Finally, I realized I did an initially poor job of
+                        estimating the time it would take to complete the
+                        project from start to finish. When Gaku and I were in
+                        the talks for the project, I had estimated that it would
+                        only take about 1 month (2 months max) to complete. Man
+                        was I wrong. There were a few factors that I didn't take
+                        consideration of such as testing, debugging, and
+                        dependencies between mine and Gaku's tasks.
+                    </p>
+                    <br />
+                    <p>
+                        Despite the things that I could have done better, I
+                        learned and improved a lot, nonetheless. I'd say I
+                        became much more efficient at splitting up and creating
+                        React components, appropriately creating and using Redux
+                        slices, building out servers, and researching solutions
+                        to problems I face in development. Further, building a
+                        website that real people use and pay for, I learned
+                        about the security risks that could potentially occur
+                        and how to prevent them. I also learned about the
+                        importance of testing especially when you are a solo
+                        developer. Finally and again, I was able to implement
+                        functionalities that I had no experience with prior to
+                        this project, but now I can say that I have experience
+                        with them and can confidently use them in future
+                        projects.
                     </p>
                 </div>
                 <div className="right-panel">
@@ -422,6 +471,9 @@ const Odyssey = () => {
                         <li>Express.js</li>
                         <li>Redux</li>
                         <li>Firebase</li>
+                        <li>Figma</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
                         <li>Stripe API</li>
                         <li>PayPal API</li>
                         <li>Animate-on-Scroll library</li>
