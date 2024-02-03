@@ -166,17 +166,36 @@
     grid-template-columns: 1fr 1fr;
 }
 
-
-
 #odyssey .task {
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
     height: 500px;
-    /* width: 100%; */
-    background-color: aliceblue;
-    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+#odyssey .task-item h4 {
+    font-size: 3rem;
 }
 
 #odyssey .task.details {
-    background-color: #333;
+    background-color: #fff;
+}
+
+#odyssey .task.details ol li{
+    margin: 0.5rem 0;
+}
+
+#odyssey .task.details > * {
+    margin: 1rem;
+    padding: 1rem;
+    height: 100%;
+} 
+
+#odyssey .task.details * {
+    font-size: 1rem;
 }
 
 /* #odyssey .task.span-two {
