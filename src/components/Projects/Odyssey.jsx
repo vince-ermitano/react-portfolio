@@ -163,7 +163,7 @@ const Odyssey = () => {
                                 <br />
                                 <p>
                                     All the wireframes were built using Figma,
-                                    where I would craft designs and layouts for
+                                    where I would craft responsive designs and layouts for
                                     each page of the website. They were then
                                     shared and discussed with Gaku to make sure
                                     we were on the same page and that they fit
@@ -182,6 +182,11 @@ const Odyssey = () => {
                                     the first time through, so there was
                                     constant analysis and iteration to
                                     throughout the project's development.
+                                </p>
+                                <p>
+                                    The actual implementation of the front-end
+                                    was built with React, Redux, HTML, JS, and
+                                    CSS.
                                 </p>
                             </div>
                         </div>
@@ -236,7 +241,8 @@ const Odyssey = () => {
                             <div>
                                 <p>
                                     The server consisted of several main routes
-                                    to handle requests made via the client.
+                                    to handle requests made via the client. It
+                                    was built with Node.js and Express.js.
                                 </p>
                                 <br />
                                 <ol>
@@ -317,11 +323,29 @@ const Odyssey = () => {
                                         the purchasing the course.
                                     </li>
                                     <li>
-                                        Only users implemented accounts could access their purchases enforcement(downloads and course modules) from a user dashboard.
+                                        Only users implemented accounts could
+                                        access their purchases
+                                        enforcement(downloads and course
+                                        modules) from a user dashboard.
                                     </li>
-                                    <li>We implemented a 'one location, one login' enforcement where users could only be logged in on one device at a time to limit account sharing.</li>
-                                    <li>Prior to the official launch, we had the website locked up for users without a password.</li>
-                                    <li>Users that purchased digital products without being logged in were sent an email containing the associated download links. These links were only accessible for 24 hours.</li>
+                                    <li>
+                                        We implemented a 'one location, one
+                                        login' enforcement where users could
+                                        only be logged in on one device at a
+                                        time to limit account sharing.
+                                    </li>
+                                    <li>
+                                        Prior to the official launch, we had the
+                                        website locked up for users without a
+                                        password.
+                                    </li>
+                                    <li>
+                                        Users that purchased digital products
+                                        without being logged in were sent an
+                                        email containing the associated download
+                                        links. These links were only accessible
+                                        for 24 hours.
+                                    </li>
                                 </ol>
                             </div>
                         </div>
@@ -391,15 +415,16 @@ const Odyssey = () => {
                     </div>
                     <ul>
                         <li>React</li>
-                        <li>React</li>
-                        <li>React</li>
-                        <li>React</li>
-                        <li>React</li>
-                        <li>React</li>
-                        <li>React</li>
-                        <li>React</li>
-                        <li>React</li>
-                        <li>React</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Redux</li>
+                        <li>Firebase</li>
+                        <li>Stripe API</li>
+                        <li>PayPal API</li>
+                        <li>Animate-on-Scroll library</li>
                     </ul>
                 </div>
             </section>
