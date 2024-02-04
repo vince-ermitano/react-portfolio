@@ -491,15 +491,15 @@ const Odyssey = () => {
                     <div className="description">
                         <h3>GAKU LANGE</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
+                            A former classmate and a good friend of mine, Gaku,
+                            a.k.a @gakuyen, a.k.a a modern renaissance man, is a
+                            creative specializing in photography and
+                            videography. With over half a million followers on
+                            instagram and working with a load of big name brands
+                            such as Apple, Nike, Gucci, and Adobe to name a few,
+                            he has proven to be a successful creative in the
+                            social media space. Check out his work to see his
+                            unique style!
                         </p>
                         <a
                             className="black-button"
