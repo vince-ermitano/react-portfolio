@@ -147,6 +147,7 @@
     background-image: url(/images/coursebannerimg.png);
 }
 
+
 #odyssey .tasks-container {
     display: grid;
     width: 100%;
@@ -163,7 +164,7 @@
 }
 
 #odyssey .task-item.active {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 #odyssey .task {

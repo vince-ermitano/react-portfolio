@@ -32,7 +32,22 @@ const Homepage = () => {
             </header> */}
             <section id="hero" data-aos="fade-up">
                 <h1 data-aos="fade-up">
-                    {"<CONCEPTS />"} INTO ↴{" "}
+                    <span id="concepts-into-text">
+                        <span>
+                            {"<CONCEPTS"}
+                            {"\u00a0"}
+                            {"/>"}
+                        </span>
+                        <span id="into-text">
+                            <span>↴</span>
+                            <span></span>
+                            <span>0</span>
+                            <span>T</span>
+                            <span>N</span>
+                            <span>I</span>
+                            {/* INTO ↴{" "} */}
+                        </span>
+                    </span>
                     <span id="polished-text">POLISHED ■</span>{" "}
                     <span id="digital-text">
                         ➥ <span>DIGITAL EXPERIENCES</span>
@@ -57,14 +72,19 @@ const Homepage = () => {
                     data-aos="fade-up"
                     onClick={(e) => {
                         e.preventDefault();
-                        document
-                            .querySelector("#about-me")
-                            .scrollIntoView({ block: "center", behavior: "smooth" });
+                        document.querySelector("#about-me").scrollIntoView({
+                            block: "center",
+                            behavior: "smooth",
+                        });
                     }}
                 >
                     Explore My Work ▼
                 </a>
-                <span id="hero-emoticon" data-aos="fade-up">
+                <span
+                    id="hero-emoticon"
+                    className="text_shadows"
+                    data-aos="fade-up"
+                >
                     ( ≖.≖)
                 </span>
                 <img
@@ -73,9 +93,10 @@ const Homepage = () => {
                     alt="double-arrow"
                     onClick={(e) => {
                         e.preventDefault();
-                        document
-                            .querySelector("#about-me")
-                            .scrollIntoView({ block: "center", behavior: "smooth"});
+                        document.querySelector("#about-me").scrollIntoView({
+                            block: "center",
+                            behavior: "smooth",
+                        });
                     }}
                 />
             </section>

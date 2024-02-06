@@ -476,6 +476,7 @@ const Odyssey = () => {
                         <li>Adobe Illustrator</li>
                         <li>Stripe API</li>
                         <li>PayPal API</li>
+                        <li>SendGrid Email API</li>
                         <li>Animate-on-Scroll library</li>
                     </ul>
                 </div>
