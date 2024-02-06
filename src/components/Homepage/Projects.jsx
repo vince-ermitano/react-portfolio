@@ -20,7 +20,7 @@ const Projects = () => {
                     </a>
                 </div>
                 <div className="project-image">
-                    <img src="https://via.placeholder.com/500" alt="project" />
+                    <img src="/images/odyssey_hero_screenshot.png" alt="project" />
                 </div>
             </div>
 
