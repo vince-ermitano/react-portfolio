@@ -38,7 +38,7 @@ const Homepage = () => {
                             {"\u00a0"}
                             {"/>"}
                         </span>
-                        <span id="into-text">
+                        <span id="into-text" className="desktop">
                             <span>↴</span>
                             <span></span>
                             <span>0</span>
@@ -47,12 +47,14 @@ const Homepage = () => {
                             <span>I</span>
                             {/* INTO ↴{" "} */}
                         </span>
+                        <span className="mobile">INTO ↴</span>
                     </span>
-                    <span id="polished-text">POLISHED ■</span> {/* ➥ */}
+                    {/* <span id="polished-text">POLISHED ■</span> ➥ */}
+                    <span id="polished-text">POLISHED</span> {/* ➥ */}
                     <span id="digital-text">
                         <iframe
                             src="https://giphy.com/embed/GraeGMXcHMKAw"
-                            class="giphy-embed"
+                            className="giphy-embed desktop"
                             allowFullScreen
                         ></iframe>
                         <span>DIGITAL EXPERIENCES</span>
@@ -92,6 +94,12 @@ const Homepage = () => {
                 >
                     ( ≖.≖)
                 </span>
+                {/* <iframe
+                    src="https://giphy.com/embed/GraeGMXcHMKAw"
+                    className="giphy-embed mobile"
+                    allowFullScreen
+                ></iframe> */}
+
                 <img
                     src={DoubleArrow}
                     data-aos="fade-up"

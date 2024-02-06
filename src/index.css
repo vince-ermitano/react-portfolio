@@ -133,6 +133,10 @@ h6 {
   --text-color-hover: #ff8489;
 }
 
+.mobile {
+  display: none;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('ttf'),
