@@ -1,8 +1,15 @@
 .projects h2{
     font-size: 9rem;
     text-align: end;
-    margin-bottom: 4rem;
     font-weight: 600;
+}
+
+.projects .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+    gap: 1rem;
 }
 
 .projects .project {

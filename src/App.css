@@ -19,6 +19,10 @@ section {
   margin-bottom: 4rem;
 }
 
+iframe {
+  border: none;
+}
+
 .black-button {
   background-color: #000;
   color: #fff;

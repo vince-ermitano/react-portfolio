@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 
 function App() {
     AOS.init({
+        once: true,
     });
 
     const [isScrolled, setIsScrolled] = useState(false);

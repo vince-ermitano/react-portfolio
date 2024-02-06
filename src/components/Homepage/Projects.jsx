@@ -4,7 +4,19 @@ import "./Projects.css";
 const Projects = () => {
     return (
         <section className="projects" data-aos="fade-up">
-            <h2>✦ MY LATEST VENTURES</h2>
+            <div className="title">
+                <iframe
+                    src="https://giphy.com/embed/Gg62mGnqvM3Ju"
+                    class="giphy-embed"
+                    allowFullScreen
+                ></iframe>
+                <h2>MY LATEST VENTURES</h2>
+            </div>
+            {/* <p>
+                <a href="https://giphy.com/stickers/sanji-Gg62mGnqvM3Ju">
+                    via GIPHY
+                </a>
+            </p> */}
 
             <div className="project" data-aos="fade-up">
                 <div className="details">
@@ -15,17 +27,28 @@ const Projects = () => {
                     <a href="/#/projects/odyssey" className="details-link">
                         details
                     </a>
-                    <a href="https://education.gakuyen.com/" target="_blank" className="visit-link">
+                    <a
+                        href="https://education.gakuyen.com/"
+                        target="_blank"
+                        className="visit-link"
+                    >
                         (visit site) <span>↗</span>
                     </a>
                 </div>
                 <div className="project-image">
-                    <img src="/images/odyssey_hero_screenshot.png" alt="project" />
+                    <img
+                        src="/images/odyssey_hero_screenshot.png"
+                        alt="project"
+                    />
                 </div>
             </div>
 
             <div className="github-link-wrapper" data-aos="fade-up">
-                <a href="https://github.com/vince-ermitano" target="_blank" className="github-link">
+                <a
+                    href="https://github.com/vince-ermitano"
+                    target="_blank"
+                    className="github-link"
+                >
                     VIEW MY GITHUB ↗
                 </a>
             </div>

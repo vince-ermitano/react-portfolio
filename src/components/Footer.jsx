@@ -18,6 +18,12 @@ const Footer = () => {
                         document.querySelector(".contact").scrollIntoView({ behavior: "smooth", block: "center"});
                     }}>contact me</p>
                 </div>
+                <div>
+                    <p>credits</p>
+                    <ul>
+                        <li>GIFs from <a href="https://giphy.com/stickers/mario-luffy-jus-axbcxcNThrlte">GIPHY</a></li>
+                    </ul>
+                </div>
             </div>
             <p>© 2023 Vince Ermitano.</p>
         </footer>

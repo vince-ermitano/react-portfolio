@@ -48,9 +48,14 @@ const Homepage = () => {
                             {/* INTO ↴{" "} */}
                         </span>
                     </span>
-                    <span id="polished-text">POLISHED ■</span>{" "}
+                    <span id="polished-text">POLISHED ■</span> {/* ➥ */}
                     <span id="digital-text">
-                        ➥ <span>DIGITAL EXPERIENCES</span>
+                        <iframe
+                            src="https://giphy.com/embed/GraeGMXcHMKAw"
+                            class="giphy-embed"
+                            allowFullScreen
+                        ></iframe>
+                        <span>DIGITAL EXPERIENCES</span>
                     </span>
                 </h1>
                 <div id="enigma-definition" data-aos="fade-up">

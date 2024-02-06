@@ -178,7 +178,21 @@ const About = () => {
 
     return (
         <section id="about-me" data-aos="fade-up">
-            <h2>MEET ME ⌘</h2>
+            <div className="title">
+                <h2>MEET ME </h2>
+                <div>
+                    <iframe
+                        src="https://giphy.com/embed/axbcxcNThrlte"
+                        className="giphy-embed"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+                {/* <p>
+                    <a href="https://giphy.com/stickers/mario-luffy-jus-axbcxcNThrlte">
+                        via GIPHY
+                    </a>
+                </p> */}
+            </div>
             <div className="grid" data-aos="fade-up">
                 <div className="related-text">
                     <nav>
