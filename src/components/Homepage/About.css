@@ -18,6 +18,7 @@
 
 #about-me .title iframe {
     border: none;
+    transform: scaleX(-1);
 }
 
 #about-me nav {
@@ -73,6 +74,8 @@
 #about-me .related-image img {
     position: relative;
     top: 200px;
+    height: 800px;
+    object-fit: cover;
     transition: all 0.75s ease-out;
     opacity: 0;
 }

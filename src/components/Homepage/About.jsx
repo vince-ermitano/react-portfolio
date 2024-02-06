@@ -38,13 +38,13 @@ const About = () => {
     const images = {
         lifestyle: "https://i.postimg.cc/TYvgVLTb/3.jpg",
         education: "https://i.postimg.cc/PrbZ2XqR/2.jpg",
-        "professional focus": "https://i.postimg.cc/TYvgVLTb/3.jpg",
+        "professional focus": "/public/images/about-me.gif",
         "tech-stack": "https://i.postimg.cc/PrbZ2XqR/2.jpg",
     };
 
     const sectionMap = {
         lifestyle: {
-            image: "https://i.postimg.cc/TYvgVLTb/3.jpg",
+            image: "https://i.postimg.cc/5N11hNWp/photography-collage.png",
             text: [
                 <>
                     <p>
@@ -90,7 +90,7 @@ const About = () => {
             ],
         },
         education: {
-            image: "https://i.postimg.cc/PrbZ2XqR/2.jpg",
+            image: "https://i.postimg.cc/NGDP1jyr/lauren-1008695251-1.jpg",
             text: [
                 <>
                     <p>
@@ -113,7 +113,12 @@ const About = () => {
             ],
         },
         "professional focus": {
-            image: "https://i.postimg.cc/TYvgVLTb/3.jpg",
+            // <iframe src="https://giphy.com/embed/BemKqR9RDK4V2" width="480" height="287" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/japan-jet-alt-BemKqR9RDK4V2">via GIPHY</a></p>
+            // image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzVmNm40cDR3c3k4M2lhNWl5OWpxcG1wZnZ0MzllbWt5OHA3YzRzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BemKqR9RDK4V2/giphy.gif",
+            // image: "https://media.giphy.com/media/XIS4ARkxVah4A/giphy.gif",
+            // image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3kwdWg5c3U0cG5vOWZuZW12MTMwaGtremc5N2U2cTVvNG1oYjFvdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ThrM4jEi2lBxd7X2yz/giphy.gif",
+            // image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Bsc290cng1ZDIwNG13aDZzMGlxYWtnMW53aDBjamhsemNrOG8zdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HteV6g0QTNxp6/giphy-downsized-large.gif",
+            image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3lrMmVmeDRqOTdocXRsNWV1MDlwbDNtZWNlM3FxNWV4aDg2a2lpaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cwcA32epxS8WfKH1L4/giphy-downsized-large.gif",
             text: [
                 <>
                     <p>
@@ -144,7 +149,7 @@ const About = () => {
             ],
         },
         "tech-stack": {
-            image: "https://i.postimg.cc/PrbZ2XqR/2.jpg",
+            image: "https://media.giphy.com/media/XIS4ARkxVah4A/giphy.gif",
             text: [
                 <>
                     <p>
@@ -178,23 +183,23 @@ const About = () => {
 
     return (
         <section id="about-me" data-aos="fade-up">
-            <div className="title">
-                <h2>MEET ME </h2>
-                <div>
-                    <iframe
-                        src="https://giphy.com/embed/axbcxcNThrlte"
-                        className="giphy-embed"
-                        allowFullScreen
-                    ></iframe>
-                </div>
-                {/* <p>
+            <div className="grid" data-aos="fade-up">
+                <div className="related-text">
+                    <div className="title">
+                        <h2>MEET ME </h2>
+                        <div>
+                            <iframe
+                                src="https://giphy.com/embed/axbcxcNThrlte"
+                                className="giphy-embed"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                        {/* <p>
                     <a href="https://giphy.com/stickers/mario-luffy-jus-axbcxcNThrlte">
                         via GIPHY
                     </a>
                 </p> */}
-            </div>
-            <div className="grid" data-aos="fade-up">
-                <div className="related-text">
+                    </div>
                     <nav>
                         <ul>
                             <li onClick={handleLinkClick} className="active">
