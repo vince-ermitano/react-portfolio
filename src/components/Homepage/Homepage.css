@@ -430,6 +430,24 @@
     }
 }
 
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+    #about-me .title h2, .projects .title h2 {
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    #about-me .title h2, .projects .title h2 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: portrait) {
+    #about-me .title h2, .projects .title h2 {
+        font-size: 3.5rem;
+    }
+
+}
+
 @media screen and (max-width: 1400px) {
     #hero h1 {
         font-size: 4rem;

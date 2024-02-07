@@ -24,6 +24,12 @@ const Projects = () => {
                     <h4>
                         Online Masterclass Portal and <br></br>E-commerce Site
                     </h4>
+                    <div className="project-image mobile">
+                        <img
+                            src="/images/odyssey_hero_screenshot.png"
+                            alt="project"
+                        />
+                    </div>
                     <a href="/#/projects/odyssey" className="details-link">
                         details
                     </a>
@@ -35,7 +41,7 @@ const Projects = () => {
                         (visit site) <span>↗</span>
                     </a>
                 </div>
-                <div className="project-image">
+                <div className="project-image desktop">
                     <img
                         src="/images/odyssey_hero_screenshot.png"
                         alt="project"
