@@ -241,7 +241,7 @@ const About = () => {
                 </div>
                 <div className="related-image">
                     <img
-                        src={sectionMap["lifestyle"].image}
+                        src={sectionMap["professional focus"].image}
                         className="fade-in"
                         alt="about-me"
                     />

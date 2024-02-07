@@ -1,3 +1,7 @@
+#about-me {
+    width: 100%;
+    overflow: hidden;
+}
 #about-me .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -75,6 +79,7 @@
     position: relative;
     top: 200px;
     height: 800px;
+    max-width: 100%;
     object-fit: cover;
     transition: all 0.75s ease-out;
     opacity: 0;
@@ -107,4 +112,57 @@
 #about-me .related-text .details.fade-in {
     left: 0;
     opacity: 1;
+}
+
+@media screen and (max-width: 1920px) {
+    #about-me .grid {
+        grid-template-columns: 5fr 4fr;
+    }
+
+    #about-me .related-image img {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+    #about-me h2 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 1080px) and (orientation: portrait) {
+    #about-me h2 {
+        font-size: 5rem;
+    }
+    #about-me .title {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1180px) and (orientation: landscape) {
+    #about-me .title {
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    #about-me h2 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #about-me .title iframe {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #about-me .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #about-me .related-image img {
+        height: 400px;
+    }
 }
