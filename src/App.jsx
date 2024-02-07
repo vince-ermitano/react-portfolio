@@ -46,28 +46,56 @@ function App() {
         <>
             <header id="header" className={visible ? "visible" : ""}>
                 <nav>
-                    <a href="/" className="hover_underline_animation">VINCE ERMITANO</a>
+                    <a href="/" className="hover_underline_animation">
+                        VINCE ERMITANO
+                    </a>
                     <ul>
                         <li>
-                            <a href="/" className="hover_underline_animation">Home</a>
+                            <a href="/" className="hover_underline_animation">
+                                Home
+                            </a>
                         </li>
                         <li>
-                            <a href="#" className="hover_underline_animation" onClick={(e) => {
-                              e.preventDefault();
-                              document.querySelector("#about-me").scrollIntoView({ block: "center"});
-                            }}>About</a>
+                            <a
+                                href="#"
+                                className="hover_underline_animation"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document
+                                        .querySelector("#about-me")
+                                        .scrollIntoView({ block: "center" });
+                                }}
+                            >
+                                About
+                            </a>
                         </li>
                         <li>
-                            <a href="#" className="hover_underline_animation" onClick={(e) => {
-                              e.preventDefault();
-                              document.querySelector(".projects").scrollIntoView({ block: "center"});
-                            }}>Projects</a>
+                            <a
+                                href="#"
+                                className="hover_underline_animation"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document
+                                        .querySelector(".projects")
+                                        .scrollIntoView({ block: "center" });
+                                }}
+                            >
+                                Projects
+                            </a>
                         </li>
                     </ul>
-                    <a id="connect-with-me" className="hover_underline_animation" onClick={(e) => {
-                      e.preventDefault();
-                      document.querySelector(".contact").scrollIntoView({ block: "center"});
-                    }}>Connect with me</a>
+                    <a
+                        id="connect-with-me"
+                        className="hover_underline_animation"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            document
+                                .querySelector(".contact")
+                                .scrollIntoView({ block: "center" });
+                        }}
+                    >
+                        Connect with me
+                    </a>
                 </nav>
             </header>
             <Routes>
