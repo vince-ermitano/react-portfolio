@@ -1,3 +1,7 @@
+#odyssey {
+    position: relative;
+}
+
 #odyssey .hero {
     position: relative;
     color: white;
@@ -270,4 +274,69 @@
 #odyssey .collaborator a {
     width: fit-content;
     margin-top: 4rem;
+}
+
+@media screen and (max-width: 1920px) and (orientation: landscape) {
+    #odyssey .hero .links p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    #odyssey .hero .links p {
+        font-size: 1.75rem;
+    }
+
+    #odyssey .hero img.logo {
+        width: 200px;
+    }
+
+    #odyssey .hero .logo-container p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #odyssey {
+        margin-bottom: 0;
+    }
+
+    #odyssey .hero .logo-container {
+        left: 5%;
+    }
+
+    #odyssey .hero .links p {
+        font-size: 1.25rem;
+    }
+
+    /* #header nav a, #header nav li{
+        color: white;
+    } */
+
+    #odyssey .hero .links {
+        left: 5%;
+        align-items: flex-start;
+    }
+
+    #odyssey .hero {
+        width: 100vw;
+        overflow-x: hidden;
+        transform: translateX(-5%);
+        position: absolute;
+    }
+
+    #odyssey .hero img.main {
+        width: auto;
+        height: 100vh;
+        transform: translateX(0);
+    }
+}
+
+/* TESTING */
+#odyssey .overview-goal, #odyssey .overview-goal + img, #odyssey .tasks, #odyssey .takeaways, #odyssey .tech-stack, #odyssey .collaborator {
+    display: none;
+}
+
+footer {
+    display: none;
 }

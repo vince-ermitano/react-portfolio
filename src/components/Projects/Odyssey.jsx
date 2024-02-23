@@ -9,6 +9,10 @@ const Odyssey = () => {
 
         const grid = document.querySelector(".tasks-container");
         const taskItems = document.querySelectorAll(".task-item");
+        const nav = document.querySelector("#header");
+
+        nav.style.position = "absolute";
+
         wrapGrid(grid);
 
         taskItems.forEach((taskItem) => {

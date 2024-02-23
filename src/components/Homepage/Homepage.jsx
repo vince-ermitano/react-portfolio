@@ -9,6 +9,10 @@ const Homepage = () => {
 
     useEffect(() => {
         scrollTo(0, 0);
+
+        const nav = document.querySelector("#header");
+        
+        nav.style.position = "relative";
     }, []);
 
     return (
