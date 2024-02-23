@@ -75,6 +75,7 @@ const Odyssey = () => {
                     </div>
                 </div>
             </section>
+            <div className="divider mobile" aria-hidden="true"></div> 
             <section className="overview-goal">
                 <h1>OVERVIEW</h1>
                 <div>
