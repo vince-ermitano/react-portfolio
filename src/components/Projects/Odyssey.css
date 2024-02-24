@@ -297,10 +297,18 @@
     #odyssey p, #odyssey li {
         font-size: 1rem;
     }
+
+    #odyssey .takeaways h3, #odyssey .tech-stack h3 {
+        font-size: 4rem;
+    }
 }
 
 @media screen and (max-width: 820px) and (orientation: portrait) {
     #odyssey h1, #odyssey h2 {
+        font-size: 3rem;
+    }
+
+    #odyssey .takeaways h3, #odyssey .tech-stack h3 {
         font-size: 3rem;
     }
 }
@@ -316,6 +324,14 @@
 
     #odyssey .hero .logo-container p {
         font-size: 1.5rem;
+    }
+
+    #odyssey .takeaways, #odyssey .tech-stack {
+        grid-template-columns: 1fr;
+    }
+
+    #odyssey .tech-stack .left-panel {
+        order: 2;
     }
 }
 
@@ -372,7 +388,7 @@
 }
 
 /* TESTING */
-#odyssey .tasks, #odyssey .takeaways, #odyssey .tech-stack, #odyssey .collaborator {
+#odyssey .tasks, #odyssey .collaborator {
     display: none;
 }
 
