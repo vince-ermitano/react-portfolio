@@ -301,6 +301,14 @@
     #odyssey .takeaways h3, #odyssey .tech-stack h3 {
         font-size: 4rem;
     }
+
+    #odyssey .collaborator h2 {
+        font-size: 8rem;
+    }
+
+    #odyssey .collaborator-container {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 820px) and (orientation: portrait) {
@@ -310,6 +318,25 @@
 
     #odyssey .takeaways h3, #odyssey .tech-stack h3 {
         font-size: 3rem;
+    }
+
+    #odyssey section.collaborator h2 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1180px) and (orientation: landscape) {
+    #odyssey .collaborator h2 {
+        font-size: 6rem;
+        top: 2rem;
+    }
+
+    #odyssey .collaborator-container p:first-child {
+        font-size: 4rem;
+    }
+
+    #odyssey .collaborator-container {
+        padding-right: 0;
     }
 }
 
@@ -332,6 +359,39 @@
 
     #odyssey .tech-stack .left-panel {
         order: 2;
+    }
+
+    #odyssey .collaborator {
+        padding-top: 0;
+    }
+
+    #odyssey .collaborator h2 {
+        font-size: 6rem;
+        position: relative;
+    }
+
+    #odyssey .collaborator-container {
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    #odyssey .collaborator-container img {
+        width: 50%;
+    }
+
+    #odyssey .collaborator-container p:first-child {
+        display: none;
+    }
+
+    #odyssey .collaborator .description {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    #odyssey .collaborator-container {
+        gap: 2rem;
     }
 }
 
@@ -385,10 +445,22 @@
     #odyssey .overview-goal + img {
         width: 100%;
     }
+
+    #odyssey .collaborator-container img {
+        width: 100%;
+    }
+
+    #odyssey section.collaborator h2 {
+        font-size: 2rem;
+    }
+
+    #odyssey .collaborator h3 {
+        font-size: 2rem;
+    }
 }
 
 /* TESTING */
-#odyssey .tasks, #odyssey .collaborator {
+#odyssey .tasks {
     display: none;
 }
 
