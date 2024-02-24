@@ -8,6 +8,7 @@ import "./App.css";
 import Odyssey from "./components/Projects/Odyssey";
 import Homepage from "./components/Homepage/Homepage";
 import Footer from "./components/Footer";
+import { Toaster } from "sonner";
 
 function App() {
     AOS.init({
@@ -44,6 +45,7 @@ function App() {
 
     return (
         <>
+            <Toaster />
             <header id="header" className={visible ? "visible" : ""}>
                 <nav>
                     <a href="/" className="hover_underline_animation">

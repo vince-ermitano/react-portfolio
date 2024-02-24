@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import { toast } from "sonner";
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -9,7 +10,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const apiUrl = import.meta.env.VITE_PRODUCTION === 'true' ? "https://portfolio-backend-1.herokuapp.com/contact" : `${import.meta.env.VITE_LOCAL_URL}/contact`;
+        const apiUrl = import.meta.env.VITE_PRODUCTION === 'true' ? "https://vinceermitano-0294c39353c2.herokuapp.com/contact" : `${import.meta.env.VITE_LOCAL_URL}/contact`;
 
         try {
             const res = await fetch(
@@ -24,11 +25,17 @@ const Contact = () => {
             const data = await res.json();
             console.log(data);
 
+            toast.success("Message sent successfully!");
+            setName("");
+            setEmail("");
+            setMessage("");
+            
             if (data.error) {
                 throw new Error(data.error);
             }
         } catch (e) {
             console.log(e);
+            toast.error("Something went wrong. Please try again later.");
         }
     };
 
