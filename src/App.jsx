@@ -9,16 +9,28 @@ import Odyssey from "./components/Projects/Odyssey";
 import Homepage from "./components/Homepage/Homepage";
 import Footer from "./components/Footer";
 import { Toaster } from "sonner";
+import {convertAniBinaryToCSS} from 'ani-cursor';
 
 function App() {
     AOS.init({
         once: true,
     });
-
     const [isScrolled, setIsScrolled] = useState(false);
 
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
+
+    async function applyCursor(selector, aniUrl) {
+        const response = await fetch(aniUrl);
+        const data = new Uint8Array(await response.arrayBuffer());
+    
+        const style = document.createElement('style');
+        style.innerText = convertAniBinaryToCSS(selector, data);
+    
+        document.head.appendChild(style);
+    }
+
+    applyCursor("body", "/src/assets/cursors/luffy_working.ani");
 
     useEffect(() => {
         const handleScroll = () => {

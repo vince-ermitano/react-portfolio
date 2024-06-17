@@ -87,6 +87,8 @@ button:focus-visible {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  /* cursor: url(http://www.rw-designer.com/cursor-extern.php?id=162241), auto; */
+  cursor: url(/src/assets/cursors/luffy_working.ani), auto;
 }
 
 img,

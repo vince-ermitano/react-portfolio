@@ -7,7 +7,7 @@ const Projects = () => {
             <div className="title">
                 <iframe
                     src="https://giphy.com/embed/Gg62mGnqvM3Ju"
-                    class="giphy-embed"
+                    className="giphy-embed"
                     allowFullScreen
                 ></iframe>
                 <h2>MY LATEST VENTURES</h2>
